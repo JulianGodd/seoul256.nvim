@@ -33,7 +33,7 @@ M.syntax = {
     SpecialComment = { fg = colors.gray },
     Statement = { fg = colors.pink },
     StorageClass = { fg = colors.cyan },
-    String = { fg = colors.string, bg = colors.none, style = "italic" },
+    String = { fg = colors.string, bg = colors.none },
     Structure = { fg = colors.puple },
     Tag = { fg = colors.red },
     Todo = { fg = colors.yellow, bg = colors.none, style = "bold,italic" },
@@ -376,6 +376,10 @@ if vim.g.seoul256_italic_variables == true then
     M.syntax.Identifier = { fg = colors.pink, bg = colors.none, style = "italic" }
     M.treesitter.TSVariable = { fg = colors.gray, style = "italic" }
     M.treesitter.TSVariableBuiltin = { fg = colors.gray, style = "italic" }
+end
+        
+if vim.g.seoul256_italic_strings == true then
+    M.syntax.String = { fg = colors.string, bg = colors.none, style = "italic" }
 end
 
 if vim.g.seoul256_borders == true then
