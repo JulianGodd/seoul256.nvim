@@ -5,7 +5,7 @@ local M = {}
 M.normal = {
     a = { fg = colors.bg, bg = colors.accent, gui = "bold" },
     b = { fg = colors.title, bg = colors.active },
-    c = { fg = colors.fg, bg = colors.selection },
+    c = { fg = colors.fg, bg = nil },
 }
 
 M.insert = {
@@ -31,7 +31,7 @@ M.command = {
 M.inactive = {
     a = { fg = colors.disabled, bg = colors.bg, gui = "bold" },
     b = { fg = colors.disabled, bg = colors.bg },
-    c = { fg = colors.disabled, bg = colors.selection },
+    c = { fg = colors.disabled, bg = nil },
 }
 
 return M
